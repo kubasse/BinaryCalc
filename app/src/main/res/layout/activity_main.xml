@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="375dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="19dp"
+        android:text="Enter a numbers in binary system"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:onClick="AplusB"
+        android:text="A + B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minus1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="200dp"
+        android:onClick="AminusB"
+        android:text="A - B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minus2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="BminusA"
+        android:text="B - A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="270dp"
+        android:onClick="AmultiB"
+        android:text="A * B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/divi1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="270dp"
+        android:onClick="AdiviB"
+        android:text="A / B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/divi2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="BdiviA"
+        android:text="B / A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numA1TextView"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="375dp"
+        android:textAlignment="center"
+        android:textColor="#FF4800"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numA2TextView"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="405dp"
+        android:textAlignment="center"
+        android:textColor="#FF4800"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numB1TextView"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="375dp"
+        android:textAlignment="center"
+        android:textColor="#1D7700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numB2TextView"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="405dp"
+        android:textAlignment="center"
+        android:textColor="#1D7700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result1TextView"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="375dp"
+        android:textAlignment="center"
+        android:textColor="#006AAD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result2TextView"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="405dp"
+        android:textAlignment="center"
+        android:textColor="#006AAD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/operationTextView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="390dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equalTextView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="390dp"
+        android:text="="
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/n1EditText"
+        android:layout_width="214dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Number A"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/n2EditText"
+        android:layout_width="214dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Number B"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
